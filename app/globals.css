@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gov-heading {
+  text-transform: uppercase;
+  font-family: var(--font-cinzel), serif;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.gov-heading::first-letter {
+  font-size: 1.4em; /* Bigger first letter */
+  letter-spacing: 0.02em;
+}
+
+.gov-word {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.gov-word::first-letter {
+  font-size: 1.5em;
+  font-weight: 900;
+}

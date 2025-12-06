@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import GovHeading from "@/components/GovHeading";
 
 export default function ServicesPage() {
   const services = [
@@ -42,21 +43,20 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-gray-50">
       {/* Hero */}
       <section className="bg-[url('/hero-services.jpg')] bg-cover bg-center">
-        <div className="backdrop-blur-sm bg-white/60">
-          <div className="max-w-6xl mx-auto px-6 py-20">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-green-800 mb-4">
-              City Services
-            </h1>
-            <p className="max-w-3xl text-lg text-gray-700">
-              Access city government services online — from permits to public
-              works requests. Find the service you need and follow the steps to
-              apply or submit a request.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div className="backdrop-blur-sm bg-white/60">
+    <div className="max-w-6xl mx-auto px-6 py-20">
+      <GovHeading text="City Services" />
 
-      {/* Services grid */}
+      <p className="max-w-3xl mx-auto text-lg text-gray-700 text-center mt-4">
+        Access city government services online — from permits to public works requests. 
+        Find the service you need and follow the steps to apply or submit a request.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+      {/* Services Grid */}
       <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (

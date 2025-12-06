@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (    
     
       <section className="bg-[url('/hero-placeholder.jpg')] bg-cover bg-center">
-        <div className="max-w-7xl mx-auto px-2 py-6 flex flex-col md:flex-row items-center gap-8">
+        <div className="max-w-7xl mx-auto px-2 py-2 flex flex-col md:flex-row items-center gap-0">
           <div className="w-full md:w-2/3 bg-white/80 backdrop-blur p-6 rounded-lg shadow">
             <h2 className="text-3xl md:text-4xl font-extrabold text-green-800">Welcome to Tarlac City</h2>
             <p className="mt-3 text-gray-700">This is a sample text only here we can add some information about tarlac city.</p>
